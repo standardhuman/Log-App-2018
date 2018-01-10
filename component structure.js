@@ -32,6 +32,12 @@ App(){
             sendTweetAndPushButton(tweet, progress, thoughts, day, date, shortLinks) => (sendTweet(tweet), gitPush(git))
                 sendTweet() => post.twitter.api 
                 gitPush() => post.gituhub.api
+                    // will need to use OAuth as OAuth uses tokens which the user can easily revoke and use to limit the access the app has to their account.
+                    // will use a webflow to direct users to GH for auth and permissions setting.
+                        // Woot! Now you know the basics of the GitHub API!
+                            // Basic & OAuth authentication
+                            // Fetching and creating repositories and issues
+                            // Conditional requests
         }
         
         displayBacklog() => {
